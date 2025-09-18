@@ -1,0 +1,804 @@
+/* 🌟 General Page Styling */
+#page-container {
+  background-color: #f3f4f6; /* Light gray background */
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif; /* Clean readable font */
+}
+
+/* 🌟 Heading Styling */
+#heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* 🌟 Form Styling */
+#form-container {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+/* 🌟 Label Styling */
+.form-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 🌟 Input Fields */
+#hall-input,
+#date-input,
+#time-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* 🌟 Branch Selection */
+#branches-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.branch-label {
+  display: flex;
+  align-items: center;
+}
+
+.branch-checkbox {
+  margin-right: 5px;
+}
+
+/* 🌟 Button Styling */
+#submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* 🌟 Error Message */
+#error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 🌟 Seating Arrangement Grid */
+#seating-container {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#seating-heading {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#seating-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* 🌟 Individual Seat Box */
+.seat-box {
+  background-color: #f9fafb;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.seat-box:hover {
+  transform: scale(1.05);
+}
+
+/* 🌟 Seat Details */
+.seat-pin {
+  font-weight: bold;
+}
+
+.seat-branch {
+  font-size: 12px;
+}
+
+.seat-position {
+  font-size: 10px;
+}
+
+/* 🌟 Empty Seat Styling */
+.seat-empty {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+/* General page styling */
+#page-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+#heading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+#form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Branch selection */
+#branches-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.branch-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #eef;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.branch-checkbox {
+  cursor: pointer;
+}
+
+/* Input fields */
+#hall-input,
+#date-input,
+#time-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Button styles */
+#submit-button {
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submit-button:hover {
+  background: #0056b3;
+}
+
+/* Error message */
+#error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Seating arrangement */
+#seating-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#seating-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Grid for seating arrangement */
+#seating-grid {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Seat box */
+.seat-box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  padding: 5px;
+}
+
+.seat-box p {
+  margin: 3px 0;
+}
+
+/* Student details */
+.seat-pin {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.seat-branch {
+  font-size: 12px;
+  color: #666;
+}
+
+.seat-position {
+  font-size: 10px;
+  color: #999;
+}
+
+/* Empty seat */
+.seat-empty {
+  font-size: 14px;
+  color: #ccc;
+  font-style: italic;
+}
+/*latest allocation*/
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Page Container */
+#page-container {
+  max-width: 750px;
+  width: 90%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid #ddd;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Expand on action */
+#page-container.expanded {
+  max-width: 850px;
+  padding: 25px;
+}
+
+/* Heading */
+#heading {
+  color: #222;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+/* Form Box */
+#form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #444;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Branch Selection */
+#branches-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.branch-label {
+  background: #ececec;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #aaa;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.branch-label input {
+  margin-right: 6px;
+}
+
+.branch-label:hover {
+  background: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button Styles */
+#submit-button,
+#save-button {
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #0056b3;
+  text-transform: uppercase;
+}
+
+#submit-button:hover,
+#save-button:hover {
+  background: #0056b3;
+  letter-spacing: 1px;
+  transform: scale(1.05);
+}
+
+/* Error Message */
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Seating Container */
+#seating-container {
+  margin-top: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+#seating-container.expanded {
+  transform: scale(1);
+  padding: 18px;
+}
+
+/* Seating Grid */
+#seating-grid {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+/* Seating Box */
+.seat-box {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+.seat-box:hover {
+  transform: scale(1.1);
+  background: #28a745;
+  color: #fff;
+}
+
+/* Seat Text */
+.seat-pin {
+  font-weight: bold;
+  color: #222;
+}
+
+.seat-branch {
+  color: #666;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.seat-empty {
+  color: #999;
+  font-style: italic;
+}
+
+/* Faculty Box */
+#faculty-container {
+  margin-top: 15px;
+  padding: 12px;
+  background: #ececec;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+}
+
+#faculty-heading {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Faculty Cards */
+.faculty-table-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.faculty-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  border: 1px solid #888;
+  font-family: "Tahoma", sans-serif;
+  font-size: 14px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faculty-card:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#page-container {
+  max-width: 650px;  /* Initially smaller */
+  width: 85%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #ccc;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Expand on action */
+#page-container.expanded {
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Heading */
+#heading {
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Form Box */
+#form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-family: "Verdana", sans-serif;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Branch Selection */
+#branches-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.branch-label {
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #aaa;
+  font-size: 12px;
+}
+
+.branch-label input {
+  margin-right: 5px;
+}
+
+.branch-label:hover {
+  background: #8c8c8c;
+  color: white;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  padding: 6px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  background: #fff;
+  font-family: "Courier New", monospace;
+}
+
+/* Button Styles */
+#submit-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #d87c00;
+}
+
+#submit-button:hover {
+  background: #e68900;
+  letter-spacing: 1px;
+}
+
+/* Error Message */
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Seating Container (Initially Small) */
+#seating-container {
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Expand seating box when active */
+#seating-container.expanded {
+  transform: scale(1);
+  padding: 15px;
+}
+
+/* Seating Grid */
+#seating-grid {
+  display: grid;
+  gap: 6px;
+  margin-top: 6px;
+  padding: 8px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Seating Box */
+.seat-box {
+  background: #f3f3f3;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+.seat-box:hover {
+  transform: scale(1.1);
+  background: #ffc107;
+  color: #fff;
+}
+
+/* Seat Text */
+.seat-pin {
+  font-weight: bold;
+  color: #333;
+}
+
+.seat-branch {
+  color: #555;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.seat-empty {
+  color: #999;
+  font-style: italic;
+}
+
+/* Faculty Box */
+#faculty-container {
+  margin-top: 12px;
+  padding: 10px;
+  background: #ececec;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+#faculty-heading {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* Faculty Cards */
+.faculty-table-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.faculty-card {
+  background: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  border: 1px solid #888;
+  font-family: "Tahoma", sans-serif;
+  font-size: 13px;
+}
+
+/* Save Button */
+#save-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #0b7dda;
+}
+
+#save-button:hover {
+  background: #1976d2;
+  text-transform: uppercase;
+}

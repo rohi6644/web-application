@@ -1,0 +1,244 @@
+/* General Styles */
+html,body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#dashboard {
+    display: flex;
+    height: 100vh;
+    width: 1550px;
+    position: relative;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+    object-fit: cover; /* Makes the video cover the screen */
+    z-index: -11; /* Ensure the video stays behind the content */
+  }
+
+.user{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.user1{
+    width:30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.user2{
+    width: 80%;
+    justify-content: left;
+    align-items: center;
+}
+
+.user-logo{
+    font-size:50px;
+    color: blue;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    border-right: 2px solid;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: background-color 0.3s;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.sidebar-title {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid ; /* Semi-transparent border */
+    transition: color 0.3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar ul li span {
+    margin-left: 10px;
+}
+
+
+#logout-link {
+    color: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#logout-link:hover {
+    font-size: 19px;
+    color: rgba(230, 0, 0, 0.5); /* Semi-transparent hover effect */
+}
+
+.sidebar-option {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar-option:hover {
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent hover */
+}
+
+.sidebar-option.active {
+    background: rgba(0, 0, 0, 0.4) ; /* Slightly more visible when active */
+    font-size: 17px;
+    border-left: 5px solid blue;
+    color: rgb(4, 242, 242) !important;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    transition: background-color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: sticky !important;
+}
+
+.heading{
+    margin-left: 200px !important;
+}
+
+.heading h1 {
+    font-size: 30px;
+  }
+  
+.heading-left h2 {
+    font-size: 15px;
+  }
+
+#mode-toggle {
+    padding: 10px;
+    width: 40px;
+    background-color: rgba(000, 000, 000, 0.3);
+    color: white !important;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.3); /* Hover effect */
+}
+
+.date-time {
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+#tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Light and Dark Mode Styles */
+.light-mode main {
+    background-color: rgba(244, 244, 244, 0.7); /* Light transparent background */
+    color: #333 !important;
+}
+
+.light-mode .sidebar {
+    background-color: rgba(259, 259, 259, 0); /* Light transparent background */
+}
+
+.light-mode .sidebar-title,
+.light-mode .sidebar-option,
+.light-mode #logout-button {
+    color: #333 !important;
+}
+
+.light-mode .date-time {
+    color: #333 !important; /* Dark text for date/time in light mode */
+}
+
+.light-mode .sidebar-option.active {
+    color: rgb(4, 242, 242) !important;
+}
+
+.dark-mode main {
+    background-color: rgba(0, 0, 0, 0); /* Dark transparent background */
+    color: #fff !important;
+}
+
+.dark-mode .sidebar {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+}
+
+.dark-mode .sidebar-title,
+.dark-mode #logout-button {
+    color: #fff !important;
+}
+
+.dark-mode .sidebar-option:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .sidebar-option.active {
+    background: rgba(255, 255, 255, 0.3); /* Active tab highlight */
+    
+}
+
+.dark-mode .date-time {
+    color: #fff !important; /* Light text for date/time in dark mode */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

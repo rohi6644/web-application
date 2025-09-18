@@ -1,0 +1,84 @@
+.branch-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px auto; /* Centers the div */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    padding: 3px;
+    height: 40px; /* Fixed height */
+    min-width: fit-content; /* Shrinks to fit content */
+    width:100px; /* Adjusts dynamically */
+    white-space: nowrap; /* Keeps buttons in a single row */
+}
+
+.branch-button {
+    padding: 5px 12px; /* Balanced padding */
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #0c0370;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+    white-space: nowrap; /* Prevents text wrapping */
+    min-width: 70px; /* Prevents size change */
+    max-width: 100px; /* Ensures uniform width */
+    text-align: center; /* Ensures text stays centered */
+}
+
+.branch-button:hover {
+    background-color: #45b3e1;
+}
+
+.branch-button.active {
+    background-color: #2bb7db;
+    color: white;
+}
+
+/* Prevents resizing or shifting */
+.branch-button:focus, 
+.branch-button:active {
+    outline: none;
+    box-shadow: none;
+    transform: none;
+}
+
+.branch-hm-hall-table {
+    width:1050px;
+    border-collapse: collapse;
+    margin-top: -350;
+    margin-left: 0px;
+  }
+  
+  .branch-hm-hall-table th,
+  .branch-hm-hall-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .branch-hm-hall-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .branch-hm-hall-table tr:hover td {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  .branch-hm-hall-table tr:nth-child(even) td {
+    background-color:  rgba(0, 0, 0, 0.2);
+  }
+  
+  .branch-hm-dark-mode .hm-hall-table tr:nth-child(even) td {
+    background-color: #444;
+  }
+  
+  
+  #rbutton{
+    width: 300px !important;
+    background-color: #2184ed  !important;
+  }

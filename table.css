@@ -1,0 +1,75 @@
+.table
+{
+margin-top:100px ;
+background: whitesmoke;
+height: 100%;
+width:80%;
+margin-left: 9%;
+border-radius: 20px;
+margin-bottom: 100px;
+padding-right: 40px;
+
+}
+
+.hm-hall-management {
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
+  }
+.header
+{                                                                                                                                                                                                                                                                                             
+     height: 70px;
+      padding-top: 50px;
+       margin-left: 30px;
+}
+.searchbar
+{
+    border:1px solid black;
+    height:70px;
+   border-radius:10px;
+   width:100px;
+   margin-left:550px;
+   padding-bottom:8px;
+}
+.searchbar input{
+    border:none;
+    background:whitesmoke;
+    outline:none;
+      
+}
+#rbutton
+{
+    float: right;
+    margin-right: 50px;
+    background: #4c7766;
+    color: white;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 10px;
+    border:none;
+}
+
+/* Table rows */
+tr:nth-child(even) {
+    background-color: #ECE7E2;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: whitesmoke;
+    color: black;
+}
+tr:hover {
+    background-color: #d0cec8;
+}
+thead{
+    background: #4c7766;
+    color: white;
+    
+}
+tr
+{
+    margin-left: -10px;
+    width: 100%;
+    border-radius: 0px;
+}
